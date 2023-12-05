@@ -7,7 +7,7 @@ html, body {
 
 :root {
     --color-white: #fff;
-    --color-main: #2c2d30;
+    --color-main: #f7f7f7;
     --color-main-fade: #2c2d3000;
     --color-secondary: #171717;
     --color-secondary-fade: #17171700;
@@ -22,7 +22,7 @@ html, body {
     --color-gpt3: #5fc319;
     --color-gpt4: #f22626;
     --color-secondary-p: #c9ccd1;
-    --color-logo: #848484;
+    --color-logo: #000000;
     --color-model-name: #ffffff;
     --color-assistant-bg: #3f4042;
     --color-assistant-text: #e1e6ed;
@@ -403,9 +403,9 @@ p.secondary {
     position: relative;
     z-index: 1;
     color: var(--color-logo);
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.5em;
 }
 
 .view.conversation-view {
@@ -447,10 +447,10 @@ p.secondary {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    max-width: 850px;
+    max-width: 950px;
     text-align: center;
     padding: 0px 45px 0 45px;
-    box-shadow: var(--color-main) 0 0 50px;
+    /* box-shadow: var(--color-main) 0 0 50px; */
 }
 
 .message-wrapper {
@@ -462,24 +462,24 @@ p.secondary {
 }
 
 #message {
-    background: var(--color-user-menu-hover);
+    background: #fff;
     border-radius: 13px;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid var(--color-user-message-border);
+    border: 2px solid #DEE1E6;
     resize: none;
     padding: 17px 85px 17px 15px;
     font-family: inherit;
     font-size: 1em;
-    color: var(--color-white);
-    box-shadow: rgba(0,0,0,0.2) 0 0 45px;
+    color: #464749;
+    /* box-shadow: rgba(0,0,0,0.2) 0 0 45px; */
     outline: none;
 }
 
 .disclaimer {
     margin-top: 12px;
-    color: var(--color-disclaimer);
-    font-size: 0.7em;
+    color: #464749;
+    font-size: 1em;
 }
 
 .send-button {
@@ -490,6 +490,21 @@ p.secondary {
     background: var(--color-gpt3);
     border-radius: 5px;
     display: inline-block;
+    font-size: 1em;
+    padding: 7px 9px 7px 7px;
+    color: var(--color-white);
+    border: none;
+    margin-top: -2px;
+}
+
+.attach-button {
+    /* position: absolute; */
+    /* right: 15px;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+    background: var(--color-gpt3);
+    border-radius: 5px;
+    display: flex;
     font-size: 1em;
     padding: 7px 9px 7px 7px;
     color: var(--color-white);
