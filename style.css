@@ -18,14 +18,14 @@ html, body {
     --color-gpt-icon: #000000;
     --color-black: #1e1e1f;
     --color-user-menu-hover: #383b42;
-    --color-text: #f5f9ff;
+    --color-text: #1e1e1f;
     --color-gpt3: #5fc319;
     --color-gpt4: #f22626;
     --color-secondary-p: #c9ccd1;
     --color-logo: #000000;
-    --color-model-name: #ffffff;
-    --color-assistant-bg: #3f4042;
-    --color-assistant-text: #e1e6ed;
+    --color-model-name: #000;
+    --color-assistant-bg: #fff;
+    --color-assistant-text: #000;
     --color-disclaimer: #d0d2e1;
     --color-border1: #484a4e;
     --color-user-menu-border: #34373a;
@@ -202,7 +202,7 @@ button:hover {
 i.user-icon {
     padding: 6px;
     color: var(--color-white);
-    background: var(--color-user-icon);
+    background: #127c26;
     display: inline-block;
     text-align: center;
     width: 15px;
@@ -418,7 +418,7 @@ p.secondary {
     text-align: center;
     color: var(--color-model-name);
     padding: 23px;
-    border-bottom: 1px solid var(--color-border2);
+    /* border-bottom: 1px solid var(--color-border2); */
     font-size: 0.85em;
 }
 
@@ -426,7 +426,7 @@ p.secondary {
     display: flex;
     gap: 20px;
     padding: 25px 60px 15px 60px;
-    border-bottom: 1px solid var(--color-border2);
+    /* border-bottom: 1px solid var(--color-border2); */
     font-size: 0.95em;
 }
 
@@ -447,7 +447,7 @@ p.secondary {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    max-width: 950px;
+    max-width: 850px;
     text-align: center;
     padding: 0px 45px 0 45px;
     /* box-shadow: var(--color-main) 0 0 50px; */
@@ -496,6 +496,40 @@ p.secondary {
     border: none;
     margin-top: -2px;
 }
+
+.suggestion-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+  }
+  
+  .suggestion {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    height: 10px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  /* Styling for h2 and p tags inside suggestion box */
+  .suggestion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion p {
+    font-size: 16px;
+    color: #333;
+    line-height: 0.8;
+    text-align: center;
+  }
 
 .attach-button {
     /* position: absolute; */
